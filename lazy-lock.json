@@ -1,0 +1,7 @@
+{
+  "lazy.nvim": { "branch": "main", "commit": "5b4444f0d7e556deba3f7ca949a2ba0e2c3369fb" },
+  "neoconf.nvim": { "branch": "main", "commit": "48178e12a8b722f36ca9f0e8ff0a5487b45de493" },
+  "neodev.nvim": { "branch": "main", "commit": "abdc346ff59c414698de551f876bcf3f223ed224" },
+  "nightfly": { "branch": "master", "commit": "83f6c366070992784c13bc255b6e7cbcef1f066f" },
+  "which-key.nvim": { "branch": "main", "commit": "fb027738340502b556c3f43051f113bcaa7e8e63" }
+}
