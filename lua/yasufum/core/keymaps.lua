@@ -16,3 +16,5 @@ vim.api.nvim_set_keymap('n', 'T', ':T <cr>', { noremap = true })
 vim.api.nvim_create_user_command(
 'TS', 'vs | wincmd j | resize 100 | terminal <args>', { nargs = '*' })
 vim.api.nvim_set_keymap('n', 'TS', ':TS <cr>', { noremap = true })
+
+vim.api.nvim_set_keymap('n', '<C-n>', ':NvimTreeToggle <cr>', {silent = true})
