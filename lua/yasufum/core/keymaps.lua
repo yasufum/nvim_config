@@ -6,6 +6,12 @@ vim.api.nvim_set_keymap('t', '<Escape>', '<C-\\><C-n>', {silent = true})
 vim.api.nvim_create_autocmd({'TermOpen'}, {
   command = 'startinsert',
 })
+vim.api.nvim_create_autocmd({'TermOpen'}, {
+  command = 'set norelativenumber',
+})
+vim.api.nvim_create_autocmd({'TermOpen'}, {
+  command = 'set nonumber',
+})
 
 -- 常にインサートモードでTerminalを開く（水平分割）
 vim.api.nvim_create_user_command(
