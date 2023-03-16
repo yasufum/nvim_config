@@ -37,6 +37,22 @@ local plugins = {
     { "folke/neoconf.nvim", cmd = "Neoconf" },
     "folke/neodev.nvim",
   },
+
+  -- fuzzy finding
+  {
+    "nvim-telescope/telescope-fzf-native.nvim",
+    run = "make",
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    branch = "0.1.x",
+    dependencies = {"nvim-lua/plenary.nvim"},
+  },
+
+  "nvim-lualine/lualine.nvim",
+  "numToStr/Comment.nvim",
+  "tpope/vim-surround",
+  "vim-scripts/ReplaceWithRegister",
 }
 
 require("lazy").setup(plugins)
