@@ -13,12 +13,14 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
   { "neoclide/coc.nvim", branch = "release", run = "yarn install --frozen-lockfile" },
+
   {
     "bluz71/vim-nightfly-colors",
     name = "nightfly",
     lazy = true,
     priority = 1000
   },
+
   {
     "nvim-tree/nvim-tree.lua",
     version = "*",
@@ -29,6 +31,7 @@ local plugins = {
       require("nvim-tree").setup {}
     end,
   },
+
   {
     "folke/which-key.nvim",
     { "folke/neoconf.nvim", cmd = "Neoconf" },
