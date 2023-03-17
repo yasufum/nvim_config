@@ -1,10 +1,15 @@
 require("yasufum.plugins-setup")
+
 require("yasufum.core.options")
 require("yasufum.core.colorscheme")
 require("yasufum.core.keymaps")
 require("yasufum.core.keymaps-coc")
+
 require("yasufum.plugins.telescope")
 require("yasufum.plugins.comment")
 require("yasufum.plugins.lualine")
 require("yasufum.plugins.nvim-tree")
 require("yasufum.plugins.nvim-cmp")
+require("yasufum.plugins.autopairs")
+require("yasufum.plugins.treesitter")
+-- require("yasufum.plugins.gitsigns")

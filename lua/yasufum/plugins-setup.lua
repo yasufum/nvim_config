@@ -49,6 +49,7 @@ local plugins = {
     dependencies = {"nvim-lua/plenary.nvim"},
   },
 
+  -- completion
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -57,13 +58,33 @@ local plugins = {
     }
   },
 
-  "L3MON4D3/LuaSnip",
-  "saadparwaiz1/cmp_luasnip",
-  "rafamadriz/friendly-snippets",
+  -- snippet
+  {
+    "L3MON4D3/LuaSnip",
+    "saadparwaiz1/cmp_luasnip",
+    "rafamadriz/friendly-snippets",
+  },
+
+  -- treesitter
+  {
+    "nvim-treesitter/nvim-treesitter",
+    run = function()
+      require("nvim-treesitter.install").update({ with_sync = true })
+    end,
+  },
+
+  -- auto closing
+  {
+    "windwp/nvim-autopairs",
+    "windwp/nvim-ts-autotag",
+  },
 
   "nvim-lualine/lualine.nvim",
+
   "numToStr/Comment.nvim",
+
   "tpope/vim-surround",
+
   "vim-scripts/ReplaceWithRegister",
 }
 
