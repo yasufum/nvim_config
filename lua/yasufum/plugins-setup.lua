@@ -79,6 +79,8 @@ local plugins = {
     "windwp/nvim-ts-autotag",
   },
 
+  "lewis6991/gitsigns.nvim",
+
   "nvim-lualine/lualine.nvim",
 
   "numToStr/Comment.nvim",
