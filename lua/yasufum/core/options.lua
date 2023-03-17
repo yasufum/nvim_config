@@ -79,6 +79,10 @@ require("lualine").setup({})
 
 -- telescope
 require("telescope").setup({
+  defaults = {
+    mappings = {
+    },
+  },
   extensions = {
     fzf = {
       fuzzy = true,
