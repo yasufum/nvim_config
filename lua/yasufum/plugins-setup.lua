@@ -12,7 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-  { "neoclide/coc.nvim", branch = "release", run = "yarn install --frozen-lockfile" },
+  { "neoclide/coc.nvim", branch = "release", build = "yarn install --frozen-lockfile" },
 
   {
     "bluz71/vim-nightfly-colors",
@@ -41,7 +41,7 @@ local plugins = {
   -- fuzzy finding
   {
     "nvim-telescope/telescope-fzf-native.nvim",
-    run = "make",
+    build = "make",
   },
   {
     "nvim-telescope/telescope.nvim",
@@ -68,7 +68,7 @@ local plugins = {
   -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
-    run = function()
+    build = function()
       require("nvim-treesitter.install").update({ with_sync = true })
     end,
   },
