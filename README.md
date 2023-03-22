@@ -2,6 +2,23 @@
 
 ## Install
 
+For using `coc.nvim`, install `nodejs` and `yarn` before the plugin
+itself. Use shell scripts provoded by each projects to install the latest releases.
+
+Installing `nodejs` requires root privilege and show a prompt to
+confirm the installation. So, add `sudo bash -s -- -y` to not
+be interrupted at once.
+
+```sh
+curl -sL install-node.vercel.app/lts | sudo bash -s -- -y
+```
+
+It's similar to `yarn` withouth root privilege.
+
+```sh
+curl --compressed -o- -L https://yarnpkg.com/install.sh | bash -s -- -y
+```
+
 Put all configs of neovim under `$HOME/.config/nvim`.
 
 ```sh
@@ -18,9 +35,8 @@ Each of extension list below is installed via command `:CocInstall PLUGIN_NAME`.
 - coc-json
 - coc-yaml
 - coc-sh
-- coc-sserver
-- coc-olargraph
-- coc-ls
-- coc-ists
-- coc-yright
-- coc-son
+- coc-tsserver
+- coc-solargraph
+- coc-rls
+- coc-git
+- coc-pyright
