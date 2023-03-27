@@ -8,7 +8,7 @@ function _lazygit_toggle()
 end
 
 vim.api.nvim_set_keymap(
-  'n', '<leader>t', '<cmd>ToggleTerm <CR>', {noremap = true, silent = true}
+  'n', 'T', '<cmd>ToggleTerm <CR>', {noremap = true, silent = true}
 )
 
 vim.api.nvim_set_keymap(
