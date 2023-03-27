@@ -79,6 +79,8 @@ local plugins = {
     "windwp/nvim-ts-autotag",
   },
 
+  { 'akinsho/toggleterm.nvim', version = "*", config = true },
+
   "lewis6991/gitsigns.nvim",
 
   "nvim-lualine/lualine.nvim",
